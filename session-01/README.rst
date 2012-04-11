@@ -66,12 +66,16 @@ vim-grammar
 
     :h motion.txt
 
+  **TODO**
+
 modes
 -----
 
 ::
 
     :h vim-modes-intro
+
+**TODO**
 
 * Always enter ``Insert`` mode in the most appropriate manner possible::
 
@@ -81,8 +85,12 @@ modes
     a/A
     ...
 
+**TODO**
+
 Examples/Showcase
 =================
+
+**TODO**
 
 Copy(Yank)/Paste
 ----------------
@@ -93,12 +101,18 @@ Copy(Yank)/Paste
     VISUAL: y
     NORMAL: p/P
 
+**TODO**
+
 Navigation
 ----------
 
 
+**TODO**
+
 Quick commands
 --------------
+
+**TODO**
 
 * Quicksearch::
 
@@ -110,32 +124,50 @@ Quick commands
     NORMAL: gqq
     VISUAL: gq
 
+**TODO**
+
 Macros
 ------
 
+**TODO**
+
 * SQL Transformation
+
+**TODO**
 
 Folding
 -------
+
+**TODO**
 
 
 Customisation
 =============
 
+**TODO**
+
 Mappings
 --------
+
+**TODO**
 
 ::
 
     [vni][nore]map
+
+**TODO**
 
 * Bubbling::
 
     vnoremap <C-Up> xkP`[V`]
     vnoremap <C-Down> xp`[V`]
 
+**TODO**
+
 Syntax Highlighting
 -------------------
+
+**TODO**
 
 Minimal Config
 --------------
@@ -153,14 +185,22 @@ Source: http://www.reddit.com/r/vim/comments/s1nwu/a_few_questions_pertaining_to
 Plugins
 -------
 
+**TODO**
+
 Final Words
 ===========
+
+**TODO**
 
 vimtutor
 --------
 
+**TODO**
+
 buffers, windows, splits and tabs
 ---------------------------------
+
+**TODO**
 
 cheat sheets
 ------------
