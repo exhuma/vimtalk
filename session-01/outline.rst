@@ -4,16 +4,34 @@ Basics
 help
 ----
 
-* opening::
+* How to open the help::
 
     :h[elp] [topic]
-    CTRL+D
+    :h 'option'
+    :h :command
 
-* navigating::
+* TAB-Completion
 
-    CTRL+]
-    CTRL+T
-    CTRL+O
+  ``vim`` supports TAB-completion for many commands and argument. Including the
+  arguments to the ``help`` command. Additionally, wherever TAB-Completion is
+  supported, the shortcut ``CTRL+D`` can be used to pop-up a list of possible
+  matches.
+
+* Navigating the help::
+
+    CTRL+] -- Follow link
+    CTRL+T -- Back
+
+  The following shortcuts also work. These shortcuts are available in **many**
+  other contexts as well (see ``:h jumplist``). Remember them well!::
+
+    CTRL+O -- Back (jump "out")
+    CTRL+I -- Forward (jump "in")
+
+* Interesting help-topics:
+
+  * ``motion.txt`` (interesting sections: ``operator``, ``text-objects``,
+    ``word-motions``, ...)
 
 vim-grammar
 -----------
