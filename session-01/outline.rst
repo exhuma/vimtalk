@@ -155,3 +155,8 @@ buffers, windows, splits and tabs
 cheat sheets
 ------------
 
+* ``:viusage``
+* http://michaelgoerz.net/refcards/vimqrc.pdf
+* http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html
+* http://michael.peopleofhonoronly.com/vim/
+
