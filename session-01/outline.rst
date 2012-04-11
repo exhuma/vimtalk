@@ -36,10 +36,37 @@ help
 vim-grammar
 -----------
 
-* verb/noun
+* verb, noun/motion
+
+  Example::
+
+     caw
+     [c]hange [a w]ord
+
+     c:  verb
+     aw: noun (see :h text-objects)
+
+  ----------------------
+
+  ::
+
+     [2]-times [d]elete to [e]nd-of-word
+     2de
+
+     d: verb
+     e: noun (see :h word-motions)
+
+  Exceptions::
+
+     Delete a line
+     dd
+
+     Copy (yank) a line
+     yy
+
 * text objects/motions::
 
-    :h text-objects
+    :h motion.txt
 
 modes
 -----
