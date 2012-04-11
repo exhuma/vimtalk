@@ -7,7 +7,7 @@ help
 * opening::
 
     :h[elp] [topic]
-
+    CTRL+D
 
 * navigating::
 
@@ -32,11 +32,11 @@ modes
 
 * Always enter ``Insert`` mode in the most appropriate manner possible::
 
-  o/O
-  i/I
-  c{motion}/C
-  a/A
-  ...
+    o/O
+    i/I
+    c{motion}/C
+    a/A
+    ...
 
 Examples/Showcase
 =================
@@ -59,13 +59,13 @@ Quick commands
 
 * Quicksearch::
 
-  *
-  #
+    *
+    #
 
 * Text formatting::
 
-  NORMAL: gqq
-  VISUAL: gq
+    NORMAL: gqq
+    VISUAL: gq
 
 Macros
 ------
