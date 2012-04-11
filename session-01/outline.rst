@@ -46,9 +46,7 @@ vim-grammar
      c:  verb
      aw: noun (see :h text-objects)
 
-  ----------------------
-
-  ::
+     --------------------------------------------
 
      [2]-times [d]elete to [e]nd-of-word
      2de
