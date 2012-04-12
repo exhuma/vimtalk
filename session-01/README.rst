@@ -313,6 +313,19 @@ will read ``~/.gvimrc`` next. So you can use your ``.vimrc`` to store your
 primary config, and override some settings (f.ex. the color-scheme) for the GUI
 in your ``.gvimrc``.
 
+Minimal Config
+--------------
+
+Source: http://www.reddit.com/r/vim/comments/s1nwu/a_few_questions_pertaining_to_my_vimrc/c4afu8e
+
+::
+
+    set nocompatible                " Disable Vi compatability
+    filetype plugin indent on       " Enable filetype-specific options
+    set backspace=indent,eol,start  " allow backspacing over everything in insert mode
+    set showcmd                     " display commands as you type them
+    nmap Y y$                       " Y defaults to doing yy due to Vi compatability, but this makes it consistent with D and C
+
 The ``~/.vim`` folder
 ---------------------
 
@@ -396,19 +409,6 @@ Syntax Highlighting
 -------------------
 
 **TODO**
-
-Minimal Config
---------------
-
-Source: http://www.reddit.com/r/vim/comments/s1nwu/a_few_questions_pertaining_to_my_vimrc/c4afu8e
-
-::
-
-    set nocompatible                " Disable Vi compatability
-    filetype plugin indent on       " Enable filetype-specific options
-    set backspace=indent,eol,start  " allow backspacing over everything in insert mode
-    set showcmd                     " display commands as you type them
-    nmap Y y$                       " Y defaults to doing yy due to Vi compatability, but this makes it consistent with D and C
 
 Plugins
 -------
