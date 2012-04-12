@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}Device List{% endblock %}
+{% block content %}
+<h1>Device List</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>Hostname</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for device in devices %}
+        <tr>
+            <td><a href="{{url_for('device', device_name=device.hostname)}}">{{ device.hostname  }}</a></td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+{% endblock %}
+
+{# vim: set filetype=jinja : #}
