@@ -442,6 +442,11 @@ support it, both *Solarized* and *Molokai* do. But to make this work, you must
 tell vim, that it should try to use 256-Color terminal mode (NOTE: This may
 have ugly results on non-256 color terminals!). This has *no* effect on gVim!
 
+To tell vim to use 256 color mode on the terminal, add the following line to
+your ``.vimrc``::
+
+    let &t_Co=256
+
 Plugins
 -------
 
