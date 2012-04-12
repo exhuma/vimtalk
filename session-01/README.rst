@@ -415,3 +415,10 @@ Convert a SELECT Statement to a Java class with getters and setters
       }<CR><ESC>
       j0
       q
+
+* This macro can now be executed by positioning the cursor on the beginning of
+  the next field (should be already the case), and by typing ``@q``.
+
+  This macro makes sure that the cursor position after executing it allows us
+  to execute it again without moving the cursor. This in turn allows us to
+  repeat the macro (for example 10 times) by typing ``10@q``.
