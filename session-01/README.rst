@@ -176,7 +176,14 @@ Examples/Showcase
 Block select + Insert
 ---------------------
 
-**TODO**
+This can be useful to comment out a block of code.
+
+Example file
+    ``examples/javascript.js``
+
+1. Select a block of text using ``CTRL+V``
+2. Either type ``Shift+I`` or ``Shift+A`` to insert text
+3. Confirm using either ``<ESC>`` or ``CTRL+[``
 
 Other useful shortcuts
 ----------------------
@@ -198,16 +205,21 @@ Other useful shortcuts
 
 **TODO**
 
-Copy(Yank)/Paste
-----------------
+Copy (Yank) / Paste
+-------------------
 
-::
+Copying can be done either in normal or visual mode:
 
-    NORMAL: yy, y{motion}
-    VISUAL: y
-    NORMAL: p/P
+Normal
+    * ``yy``: yank the current line
+    * ``y{motion or text-object}``: yank the mentioned text-object
 
-**TODO**
+Visual
+    * ``y``: Yank the selected text
+
+Normal
+    * ``p``: Paste below the current line
+    * ``Shift+P``: Paste above the current line
 
 Navigation
 ----------
