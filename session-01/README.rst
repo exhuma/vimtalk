@@ -420,27 +420,76 @@ Examples
 Syntax Highlighting
 -------------------
 
-**TODO**
+Most modern distributions have syntax highlighting enabled by default. If it is
+not, it can be enabled by adding these two lines to your ``.vimrc``::
+
+    syntax on
+
+In the worst case, you might also need to activate filetype detection by adding
+the following::
+
+    filetype plugin indent on
+
+The most interesting customisation is the ``colorscheme``. As always, colors
+are a matter of personal preference. Two nice color schemes are:
+
+* Solarized (bright and dark background): http://ethanschoonover.com/solarized
+* Molokai (dark background): http://www.vim.org/scripts/script.php?script_id=2340
+
+Most modern terminals support 256 ANSI colors. While not all colorschemes
+support it, both *Solarized* and *Molokai* do. But to make this work, you must
+tell vim, that it should try to use 256-Color terminal mode (NOTE: This may
+have ugly results on non-256 color terminals!). This has *no* effect on gVim!
 
 Plugins
 -------
 
-**TODO**
+Plugin installation has been vastly improved by Pathogen
+(https://github.com/tpope/vim-pathogen) and Vundle
+(https://github.com/gmarik/vundle). Use either one of these two.
+
+For each installed plugin, it is recommended to read the plugin's
+documentation!
+
+Noteworthy plugins are:
+
+nerdtree
+    A (more) advanced file browser for vim
+
+supertab
+    Use ``<TAB>`` for auto-completion (with advanced features)
+
+ctrlp
+    Fuzzy file finder.
+
+surround
+    Surround words (text objects) with quotes, or change surrounding braces to
+    brackets, ...
 
 Final Words
 ===========
 
-**TODO**
+This talk only scratched the surface. But the help-topics give you a few
+starting points for your own explorations.
 
 vimtutor
 --------
 
-**TODO**
+Vim comes with a separate command ``vimtutor``. It is an interactive
+do-it-yourself tutorial for vim. For anyone starting vim, this should be one of
+the first things you do!
 
 buffers, windows, splits and tabs
 ---------------------------------
 
-**TODO**
+::
+
+    :h buffers
+
+Files opened in vim are loaded into buffers. What you see on your screen is a
+window to a buffer. You can open multiple files in one vim session and jump
+across buffers. Additionally, you can have tabs and splits. These are nothing
+more as additional windows to buffers.
 
 Appendix I - Cheat Sheets
 =========================
