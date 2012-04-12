@@ -126,20 +126,70 @@ modes
 
     :h vim-modes-intro
 
-**TODO**
+I will briefly mention Normal, Insert Visual and Command-Line mode. Others
+exist as well. See the appropriate help page!
 
-* Always enter ``Insert`` mode in the most appropriate manner possible::
+Normal mode
+~~~~~~~~~~~
 
-    o/O
-    i/I
-    c{motion}/C
-    a/A
-    ...
+In normal mode *every key* is a shortcut! It's worth knowing them all!
 
-**TODO**
+Insert mode
+~~~~~~~~~~~
+
+Always enter ``Insert`` mode in the most appropriate manner possible!
+
+``o/O``
+    Open a new line below/above the current line
+
+``i/I``
+    Insert new text before the current character/at end of line
+
+``c{motion or text-object}/C``
+    change some text/to the end of the line
+
+``cc``
+    Change the current line
+
+``a/A``
+    Insert new text after the current character/at end of line
+
+Visual mode
+~~~~~~~~~~~
+
+Visual mode can be used to select a range of text, and perform operations on it.
+
+Command-Line mode
+~~~~~~~~~~~~~~~~~
+
+In command line mode, you can enter a vim command. Usually command line mode is
+started using ``:``, ``/`` or ``?``.
 
 Examples/Showcase
 =================
+
+Block select + Insert
+---------------------
+
+**TODO**
+
+Other useful shortcuts
+----------------------
+
+``gf``
+    Goto file under cursor
+
+``CTRL+O``
+    Jump "out" (back) (see ``gf``)
+
+``~``
+    Toggle character case
+
+``CTRL+D``
+    Un-indent while in insert mode
+
+``CTRL+T``
+    Indent current line while in insert mode
 
 **TODO**
 
@@ -261,3 +311,5 @@ cheat sheets
 * http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html
 * http://michael.peopleofhonoronly.com/vim/
 * http://naleid.com/blog/2010/10/04/vim-movement-shortcuts-wallpaper/
+
+
