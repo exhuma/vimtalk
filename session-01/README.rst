@@ -126,7 +126,7 @@ Text Objects
 ``aw``
     a word (including whitespace)
 
-modes
+Modes
 -----
 
 ::
