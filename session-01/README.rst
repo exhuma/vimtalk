@@ -256,13 +256,46 @@ Macros
 ``@@``
     Re-execute the last executed macro.
 
-
-
 Folding
 -------
 
-**TODO**
+::
 
+    :h folding
+
+The main folding methods are:
+
+manual
+    Only use manually created folds
+
+indent
+    use the file indentation level for fold. This uses the setting
+    ``shiftwidth`` to determine the folding level.
+
+marker
+    uses a special marker (default: ``{{{`` and ``}}}``) to define where a fold
+    starts and ends
+
+syntax
+    Uses the sytax definition to set folds. This only works if the syntax
+    definition supports this feature.
+
+Useful shortcuts
+~~~~~~~~~~~~~~~~
+
+``za``
+    Toggle open/close
+
+``zf``
+    Creates a new fold in manual and marker mode (in marker mode, it
+    automatically inserts the markers surrounded with the value from
+    ``'commentstring'``!)
+
+``zR``
+    Open all folds.
+
+``zM``
+    Close all folds.
 
 Customisation
 =============
