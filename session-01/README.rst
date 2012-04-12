@@ -73,11 +73,12 @@ Exceptions::
     Copy (yank) a line
     yy
 
-Text objects/motions::
-~~~~~~~~~~~~~~~~~~~~~~
+Text objects/motions
+~~~~~~~~~~~~~~~~~~~~
+
+::
 
     :h motion.txt
-
 
 Motions
 ^^^^^^^
