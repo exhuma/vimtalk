@@ -66,7 +66,25 @@ vim-grammar
 
     :h motion.txt
 
-  **TODO**
+
+    Motions
+    -------
+
+    w/W  - one word forward (to the beginning of the next word)
+    e/E  - one word forward (the the end of the current word)
+    }    - One paragraph forward (to the next empty line)
+    f/F  - Move to the next/previous named character
+    t/T  - Move before the next/previous named character
+
+    Text Objects
+    ------------
+
+    i(  - text inside parentheses
+    a(  - a parentheses "block"
+    i"  - text inside double quotes
+    a"  - a double quotes "block"
+    iw  - a word (excluding whitespace)
+    aw  - a word (including whitespace)
 
 modes
 -----
