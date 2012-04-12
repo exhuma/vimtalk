@@ -4,87 +4,119 @@ Basics
 help
 ----
 
-* How to open the help::
+How to open the help
+~~~~~~~~~~~~~~~~~~~~
+
+::
 
     :h[elp] [topic]
     :h 'option'
     :h :command
 
-* TAB-Completion
+TAB-Completion
+~~~~~~~~~~~~~~
 
-  ``vim`` supports TAB-completion for many commands and argument. Including the
-  arguments to the ``help`` command. Additionally, wherever TAB-Completion is
-  supported, the shortcut ``CTRL+D`` can be used to pop-up a list of possible
-  matches.
+``vim`` supports TAB-completion for many commands and argument. Including the
+arguments to the ``help`` command. Additionally, wherever TAB-Completion is
+supported, the shortcut ``CTRL+D`` can be used to pop-up a list of possible
+matches.
 
-* Navigating the help::
+Navigating the help
+~~~~~~~~~~~~~~~~~~~
+
+::
 
     CTRL+] -- Follow link
     CTRL+T -- Back
 
-  The following shortcuts also work. These shortcuts are available in **many**
-  other contexts as well (see ``:h jumplist``). Remember them well!::
+The following shortcuts also work. These shortcuts are available in **many**
+other contexts as well (see ``:h jumplist``). Remember them well!::
 
     CTRL+O -- Back (jump "out")
     CTRL+I -- Forward (jump "in")
 
-* Interesting help-topics:
+Interesting help-topics:
+~~~~~~~~~~~~~~~~~~~~~~~~
 
-  * ``motion.txt`` (interesting sections: ``operator``, ``text-objects``,
-    ``word-motions``, ...)
+* ``motion.txt`` (interesting sections: ``operator``, ``text-objects``,
+  ``word-motions``, ...)
 
 vim-grammar
 -----------
 
-* verb, noun/motion
+verb, noun/motion
+~~~~~~~~~~~~~~~~~
 
-  Example::
+Example::
 
-     caw
-     [c]hange [a w]ord
+    caw
+    [c]hange [a w]ord
 
-     c:  verb
-     aw: noun (see :h text-objects)
+    c:  verb
+    aw: noun (see :h text-objects)
 
-     --------------------------------------------
+--------------------------------------------
 
-     [2]-times [d]elete to [e]nd-of-word
-     2de
+::
 
-     d: verb
-     e: noun (see :h word-motions)
+    [2]-times [d]elete to [e]nd-of-word
+    2de
 
-  Exceptions::
+    d: verb
+    e: noun (see :h word-motions)
 
-     Delete a line
-     dd
+Exceptions::
 
-     Copy (yank) a line
-     yy
+    Delete a line
+    dd
 
-* text objects/motions::
+    Copy (yank) a line
+    yy
+
+Text objects/motions::
+~~~~~~~~~~~~~~~~~~~~~~
 
     :h motion.txt
 
 
-    Motions
-    -------
+Motions
+^^^^^^^
 
-    w/W  - one word forward (to the beginning of the next word)
-    e/E  - one word forward (the the end of the current word)
-    }    - One paragraph forward (to the next empty line)
-    f/F  - Move to the next/previous named character
-    t/T  - Move before the next/previous named character
+``w/W``
+    one word forward (to the beginning of the next word)
 
-    Text Objects
-    ------------
+``e/E``
+    one word forward (the the end of the current word)
 
-    i(  - text inside parentheses
-    a(  - a parentheses "block"
-    i"  - text inside double quotes
-    a"  - a double quotes "block"
-    iw  - a word (excluding whitespace)
-    aw  - a word (including whitespace)
+``}``
+    One paragraph forward (to the next empty line)
+
+``f/F``
+    Move to the next/previous named character
+
+``t/T``
+    Move before the next/previous named character
+
+Text Objects
+^^^^^^^^^^^^
+
+``i(``
+    text inside parentheses
+
+``a(``
+    a parentheses "block"
+
+``i"``
+    text inside double quotes
+
+``a"``
+    a double quotes "block"
+
+``iw``
+    a word (excluding whitespace)
+
+``aw``
+    a word (including whitespace)
 
 modes
 -----
