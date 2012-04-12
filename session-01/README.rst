@@ -134,6 +134,8 @@ Normal mode
 
 In normal mode *every key* is a shortcut! It's worth knowing them all!
 
+To get (back) into normal mode, you either type ``<ESC>`` or ``CTRL+[``.
+
 Insert mode
 ~~~~~~~~~~~
 
@@ -158,6 +160,9 @@ Visual mode
 ~~~~~~~~~~~
 
 Visual mode can be used to select a range of text, and perform operations on it.
+
+Visual mode is commonly started using either ``v`` (normal select), ``Shift+V``
+(linewise selection)  or ``CTRL+V`` (block selection)
 
 Command-Line mode
 ~~~~~~~~~~~~~~~~~
