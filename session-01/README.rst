@@ -209,4 +209,4 @@ cheat sheets
 * http://michaelgoerz.net/refcards/vimqrc.pdf
 * http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html
 * http://michael.peopleofhonoronly.com/vim/
-
+* http://naleid.com/blog/2010/10/04/vim-movement-shortcuts-wallpaper/
