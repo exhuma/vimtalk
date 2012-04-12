@@ -185,8 +185,8 @@ Example file
 2. Either type ``Shift+I`` or ``Shift+A`` to insert text
 3. Confirm using either ``<ESC>`` or ``CTRL+[``
 
-Other useful shortcuts
-----------------------
+Useful shortcuts
+----------------
 
 ``gf``
     Goto file under cursor
@@ -203,7 +203,18 @@ Other useful shortcuts
 ``CTRL+T``
     Indent current line while in insert mode
 
-**TODO**
+``*``/``#``
+    Find the word under the cursor (forwards/backwards)
+
+``gqq``
+    Automatically format the current line
+
+``VISUAL: gq``
+    Automatically format the selected text
+
+``CTRL+N``/``CTRL+P``
+    Text completion ([N]ext, [P]revious). It is very naïve and only looks for
+    words in all open buffers.
 
 Copy (Yank) / Paste
 -------------------
@@ -224,34 +235,28 @@ Normal
 Navigation
 ----------
 
-
-**TODO**
-
-Quick commands
---------------
-
-**TODO**
-
-* Quicksearch::
-
-    *
-    #
-
-* Text formatting::
-
-    NORMAL: gqq
-    VISUAL: gq
-
-**TODO**
+``h``, ``j``, ``k`` and ``l`` as navigation keys!
 
 Macros
 ------
 
-**TODO**
+``qa``
+    Start a macro recording (``a``) is a named register. It can be any
+    alphabetic letter. In other words, you can record up to 26 macros!
 
-* SQL Transformation
+    From this point on *all* key presses will be recorded into the named macro
+    and can be replayed later
 
-**TODO**
+``q``
+    Stop recording.
+
+``@a``
+    Play the macro stored in register ``a``.
+
+``@@``
+    Re-execute the last executed macro.
+
+
 
 Folding
 -------
@@ -320,8 +325,8 @@ buffers, windows, splits and tabs
 
 **TODO**
 
-cheat sheets
-------------
+Appendix I - Cheat Sheets
+=========================
 
 * ``:viusage``
 * http://michaelgoerz.net/refcards/vimqrc.pdf
@@ -329,4 +334,84 @@ cheat sheets
 * http://michael.peopleofhonoronly.com/vim/
 * http://naleid.com/blog/2010/10/04/vim-movement-shortcuts-wallpaper/
 
+Appendix II - Example Macro
+===========================
 
+Convert a SELECT Statement to a Java class with getters and setters
+-------------------------------------------------------------------
+
+* Open the file examples/sql.sql::
+
+      :e examples/sql.sql
+
+* Yank the line containing the SELECT statement::
+
+      /SELECT<CR>yy
+
+* Open a new file::
+
+      :e Client.java
+
+* Paste the line::
+
+      <SHIFT+P>
+
+* Yank the name of the table (the last word)::
+
+      $Bye
+
+* Add a new line below this one, and insert the class statement::
+
+      o
+      public class<ESC>
+
+* Paste the table name, and uppercase the first character::
+
+      pb~
+
+* Add the beginning and ending braces::
+
+      A{<CR>}<ESC>
+
+* Go back to the first line (the SELECT statement), and extract the field names::
+
+      gg
+      dw
+      /FROM<CR>
+      hD
+
+* Move the line below the "class" line (delete + paste)::
+
+      ddp
+
+* Replace all occurences of ``", "`` with a newline::
+
+      V
+      :s/, /<CTRL+V><CR>/g
+
+* Jump back to the original position::
+
+      ggj
+
+* Start the macro::
+
+      qq
+
+* Record the following actions::
+
+      "tye
+      I<CTRL+t>
+      public String get<ESC>
+      l~
+      A(){<CR>
+      return this.<CTRL+R>t;<CR>
+      }<CR><CR>
+      public void set<CTRL+R>t<ESC>
+      Blll~
+      A(String<SPACE>
+      <CTRL+R>t
+      ){<CR>
+      this.<CTRL+R>t = <CTRL+R>t;<CR>
+      }<CR><ESC>
+      j0
+      q
