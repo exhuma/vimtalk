@@ -394,16 +394,28 @@ Mappings
 
 ::
 
-    [vni][nore]map
+    :h mapping
+    :h <>
 
-**TODO**
+Defining mappings is very easy. Simply add a line in your ``.vimrc`` (or any
+filetype-plugin) specifying the mode (``map``, ``imap``, ``nmap``, ``vmap``,
+...) a key or key combination and the commands to be executed.
 
-* Bubbling::
+Examples
+~~~~~~~~
 
-    vnoremap <C-Up> xkP`[V`]
-    vnoremap <C-Down> xp`[V`]
+* When in normal mode, insert "Hello World!" at the current cursor position::
 
-**TODO**
+    nmap <F5> aHello World!<ESC>
+
+* Using vim commands is also possible::
+
+    nmap <F6> dd10P5j^CHello World!<ESC>5k
+
+* Something useful: "Text Bubbling"::
+
+    vmap <C-Up> xkP`[V`]
+    vmap <C-Down> xp`[V`]
 
 Syntax Highlighting
 -------------------
