@@ -1,6 +1,13 @@
 Basics
 ======
 
+DISCLAIMER
+    This document is by no means comprehensive. Vim does *much* more than only
+    the features outlined in this document. For this reason, the most relevant
+    help-pages are noted in each section. If you want to know more about this
+    topic, you are more than encouraged to open these up and dig around
+    yourself.
+
 help
 ----
 
@@ -300,12 +307,77 @@ Useful shortcuts
 Customisation
 =============
 
-**TODO**
+For personal use, two config files are of interest: ``~/.vimrc`` and
+``~/.gvimrc``. Vim first reads your ``~/.vimrc`` and, if you are using gVim, it
+will read ``~/.gvimrc`` next. So you can use your ``.vimrc`` to store your
+primary config, and override some settings (f.ex. the color-scheme) for the GUI
+in your ``.gvimrc``.
+
+The ``~/.vim`` folder
+---------------------
+
+::
+
+    :h 'runtime-path'
+
+Additionally to these two files, a lot of customisations can be stored inside a
+folder called ``~/.vim``.
+
+The most interesting folders are::
+
+    .vim
+    ├── colors          see :h :colorscheme
+    ├── ftdetect        see :h ftdetect
+    ├── ftplugin        see :h write-filetype-plugin
+    └── syntax          see :h mysyntaxfile
+
+colors
+~~~~~~
+
+::
+
+    :h :colorscheme
+
+This folder can contain custom color-schemes. If you download new color-schemes
+from the internet (or you make your own), this is the place to put it!
+
+ftdetect
+~~~~~~~~
+
+::
+
+    :h ftdetect
+
+This folder contains one file per filetype. These files define how filetypes
+are detected. If you work with files which are not yet known by vim, you can
+define your own rules here. This may only be useful with a related ``ftplugin``
+file (see below)
+
+ftplugin
+~~~~~~~~
+
+::
+
+    :h write-filetype-plugin
+
+Aside from your global ``.vimrc`` config, you can define customisations per
+filetype. This allows you to use the same buttons for different shortcuts
+depending on filetype. For example, pressing ``<F5>`` in a python file might
+execute it, while ``<F5>`` on a ``.txt`` file might re-format the contents.
+
+syntax
+~~~~~~
+
+::
+
+    :h mysyntaxfile
+
+In this folder, you can define your own syntax file. In case you work with file
+types not known by vim. It is also very helpful to have an appropriate file in
+ftdetect.
 
 Mappings
 --------
-
-**TODO**
 
 ::
 
